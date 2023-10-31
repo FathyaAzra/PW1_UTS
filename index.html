@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <title>News Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 </head>
 
 
@@ -34,13 +33,12 @@
     </div>
     <div class="navbar-container">
       <div class="teleport">
-        <p><a href="#" class="category">Main News</a></p>
-        <p><a href="#" class="category">Hottest News</a></p>
-        <p><a href="#" class="category">Latest News</a></p>
-        <p><button type="tema" class="btn btn-dark" id="buttonform">Submit</button></p>
-        <p><a href="#" class="category">Teknologi</a></p>
-        <p><a href="#" class="category">Ekonomi</a></p>
-        <p><a href="#" class="category">Gaya Hidup</a></p>
+        <h5><a href="#" class="category">Main News</a></h5>
+        <h5><a href="#" class="category">Hottest News</a></h5>
+        <h5><a href="#" class="category">Latest News</a></h5>
+        <h5><a href="#" class="category">Teknologi</a></h5>
+        <h5><a href="#" class="category">Ekonomi</a></h5>
+        <h5><a href="#" class="category">Gaya Hidup</a></h5>
       </div>
     </div>
   </div>
@@ -48,11 +46,12 @@
 
 <!--HEADLINE-->
 <div>
-  <div class="container-fluid judulbesar">
+    <div class="container-fluid judulbesar">
+    <p><button type="tema" class="btn btn-dark" id="buttonform">Ganti Tema</button></p>
     <center><h1 class="headline">BREAKING NEWS</h1></center>
   </div>
   <div class="container-fluid hotnews">
-    <img src="img/beritateknologi1.webp" style= "width: 500px; padding-bottom:50px; padding-top:50px; padding-left:20px;"> 
+    <img src="img/beritateknologi1.webp" style= "width: 500px; padding-bottom:50px; padding-top:50px; padding-left:20px;" id="gambarheadline" >
     <h1><a href="#" class="centered-link judul">Keren! Alat Penyerap Gas Karbon Berhasil Dibuat Mahasiswa UGM & Bisa Dipantau Real Time</a></h1>
   </div>
 
@@ -61,7 +60,7 @@
 <!--KATEGORI-->
 <div>
   <div class="container-fluid judulbesar">
-    <h1 class="headline"><center>KATEGORI</center></h1>
+   <center><h1 class="headlinedua">KATEGORI</h1></center>
   </div>
 
   <!--TEKNOLOGI-->
@@ -242,4 +241,5 @@
 </div>
 <script src="script.js"></script>
 </body>
+
 </html>
