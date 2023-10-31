@@ -7,13 +7,12 @@
 /*navigation*/
 .navbar{
     width:100%;
-    height:60px;
+    height:75px;
     background-color:brown;
+    position: fixed;
 }
 .navbar-container{
     display:flex;
-    align-items:top;
-    padding:auto;
     margin-left: auto;
 }
 .logo a{
@@ -25,10 +24,24 @@
     font-weight:bolder;
 }
 
+.logo a span{
+    display: inline-block;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--delay))
+}
+@keyframes flip {
+    0%,50% {
+      transform: rotateY(360deg) 
+    }
+}
+
+
 .teleport{
     margin-left: auto;
-    margin-block: 10px;
+    margin-top: 10px;
     margin-right: 10px;
+    align-items:top;
+    padding:auto;
     display:flex;
     justify-content: flex-end;
 }
@@ -44,10 +57,10 @@
     color:rgb(255, 200, 200);
 }
 
-/*headline*/
+/*HEADLINE*/
 .judulbesar{
     width:100%;
-    height:150px
+    height:150px;
 }   
 .headline{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -61,11 +74,11 @@
     display:flex;
     align-items: flex-start;
     justify-content:space-between;
+    background-color: rgb(30, 30, 30);
 }
 .hotnews h1{
     display: inline;
     text-decoration: none;
-    color:rgb(30, 30, 30);
     padding-top:100px;
     padding-right:10px;
     font-size:45px;
@@ -75,158 +88,51 @@
 }
 .judul{
     text-decoration: none;
-    color:rgb(30, 30, 30);
+    color:white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:60px;
 } 
 
 
-/*viral*/
-.judulberita{
-    background-color: rgb(30, 30, 30);
-}
-.judullist{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 40px;
-    text-align:center;
-    color:white;
-    font-weight: bolder;
-    padding-bottom:25px;
-}
-.listberita{
-    width:100%;
-    height:500px;
-    display: flex;
-    justify-content: space-between;
-}
-.listberita2{
-    text-align:center;
-    width:100%;
-    padding: 50px;
-    }
+/*Per kategori*/
 
 
-/*JANGAN POLITIK WOY*/
-.judulkategori1{
-    background-color:white;
+.KOTAKKATEGORI{
+    margin-top: 10px;
 }
 
-#container4{ /*INI DIMANAA*/
-    width:100%;
-    height:150px;
-    display:flex;
-    text-align: center;
-    justify-content: center;
-}
-      
-.Kategori{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight:bolder;
-    padding-top: 50px;
-    color:black;
+.containcard{
+    margin: 25px;
 }
 
-.listpolitik{
-     background-color:brown;
-     width:100%;
-    text-align:start;
-    height:80px;
-    justify-content: space-between;
-}
-
-.kategori1{
-    padding-top:25px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight:bolder;
-}
-
-#kumpulankartu1{
-    padding-top:50px;
-    text-align: center;
-    justify-content: space-between;
-}
-
-
-/*TEKNOLOGI*/
-#container7{
-    height: 50px;
-}
-      
-#container8{
-    width:100%;
-    text-align:start;
-    height:80px;
-    justify-content: space-between;
-}
-
-.listteknologi{
-    background-color: brown;
-}
-
-.kategori2{
-    padding-top: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-}
-
-/**/#container9{
-    height:1250px;
-}
-
-
-/*EKONOMI*/
-#container10{
-    width:100%;
-    text-align:start;
-    height:80px;
-    justify-content: space-between; 
-}
-
-.listekonomi{
-    background-color: brown;
-}
-
-.kategori3{
-    padding-top: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;   
-}
-
-/**/#container12{
-    height:50px;
-}
-
-/*GAYA HIDUP*/
-.gayahidup{
+.JudulKategori{
     background-color: brown;
     width:100%;
     text-align:start;
     height:80px;
     justify-content: space-between;
 }
-.kategori4{
+.judulk{
     padding-top: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
 }
 
-
-
-/**/#container15{
-    height:100px;
+.gambarcard{
+    width: 100%;
+    height: 16vw;
+    object-fit: cover;
 }
+
 
 
 /*FOOTER*/
-#container16{
-    width:100%;
-    text-align:start;
-    height:500px;
-    justify-content: space-between;
-}
-
 .containerakhir{
     background-color: brown;
+    width:100%;
+    text-align:start;
+    height:300px;
+    justify-content: space-between;
 }
 
 .logo2{
@@ -246,19 +152,18 @@
 .hubungikami{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    padding-left:50px;
+    padding-left:10px;
     color:white;
-    padding-top:50px;
+    padding-top:20px;
 }
 
 .whatsapp{
     display:flex;
-    padding-left:45px;
-    padding-top: 25px;
+    padding-top: 5px;
 }
 
 .duanomor{
-    padding-left:10px;
+    padding-left:5px;
     color:aliceblue;
 }
 
@@ -272,43 +177,18 @@
     font-weight: bolder;
 }
 
-.instagram{
-    display:flex;
-    padding-left:50px;
-    padding-top: 25px;
-}
-
-.duainstagram{
-    padding-left: 20px;
-    color:aliceblue;
-}
-
-.instagram1{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-
-.instagram2{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-}
-
 .gmail{
     display:flex;
-    padding-left: 45px;
-    padding-top: 25px;
-}
-      
+    padding-top: 5px;
+}   
 .duagmail{
     padding-left:10px;
     color:aliceblue;
 }
-
 .gmail1{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
 }
-
 .gmail2{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
@@ -316,19 +196,25 @@
 
 .isikontainerakhir{
     display:flex;
+    margin-left: auto;
 }
       
 .form{
     text-align: start;
-    padding-left: 260px;
+    margin-left: auto;
+    margin-block: 10px;
+    margin-right: 10px;
+    align-items:top;
+    padding:auto;
+    justify-content: flex-end;
 }
 
-.datadiri{
+.notif{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     padding-left:70px;
     color:white;
-    padding-top:48px;
+    padding-top:5px;
 }
 
 #tulisanemail{
@@ -346,21 +232,9 @@
 #WhatsAppHelp{
     color: white;
 }
-
-#buttonform{
-    background-color: rgb(255, 200, 200);
-}
-
 .button{
     padding-left:110px;
 }
-
-#maps{
-    padding-top:55px;
-    padding-left:200px;
-    padding-right:0px;
-}
-
 .contactUS{
     padding-left: 20px;
 }
