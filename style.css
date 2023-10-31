@@ -6,14 +6,13 @@
 
 /*navigation*/
 .navbar{
-    width:100%;
-    height:75px;
+    width:100%; 
     background-color:brown;
-    position: fixed;
 }
 .navbar-container{
     display:flex;
     margin-left: auto;
+    
 }
 .logo a{
     color:rgb(255, 200, 200);
@@ -28,6 +27,7 @@
     display: inline-block;
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--delay))
+   
 }
 @keyframes flip {
     0%,50% {
@@ -40,7 +40,7 @@
     margin-left: auto;
     margin-top: 10px;
     margin-right: 10px;
-    align-items:top;
+    align-items:bottom;
     padding:auto;
     display:flex;
     justify-content: flex-end;
@@ -65,7 +65,7 @@
 .headline{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
-    padding-top: 60px;  
+    padding-top: 10px;  
     }
 .hotnews{
     width:100%;
@@ -76,6 +76,18 @@
     justify-content:space-between;
     background-color: rgb(30, 30, 30);
 }
+
+#buttonform{
+margin-top:10px;
+font-weight: bolder;
+font-family: 'Times New Roman', Times, serif;
+}
+
+#buttonform:hover{
+    background-color: pink;
+    color: black;
+}
+
 .hotnews h1{
     display: inline;
     text-decoration: none;
@@ -96,6 +108,11 @@
 
 /*Per kategori*/
 
+.headlinedua{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-top: 50px;  
+}
 
 .KOTAKKATEGORI{
     margin-top: 10px;
@@ -103,6 +120,8 @@
 
 .containcard{
     margin: 25px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
 .JudulKategori{
@@ -131,7 +150,7 @@
     background-color: brown;
     width:100%;
     text-align:start;
-    height:300px;
+    height:350px;
     justify-content: space-between;
 }
 
