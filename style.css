@@ -257,3 +257,9 @@ font-family: 'Times New Roman', Times, serif;
 .contactUS{
     padding-left: 20px;
 }
+
+.isiberita{
+    display: flex;
+    width: 75%;
+    height: 2000px;
+}
