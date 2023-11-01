@@ -57,7 +57,27 @@
     color:rgb(255, 200, 200);
 }
 
+/*KATEGORI*/
+.isi{
+    background-color: rgb(255, 225, 225);
+    min-height:500px;
+}
 
+.KOTAKKATEGORI{
+    padding-bottom: 30px;
+}
+
+.JudulKategori{
+    background-color: brown;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.gambarcard{
+    width:400px;
+    height: 240px;
+    object-fit: cover;
+}
 
 #buttonform{
 margin-top:10px;
@@ -79,7 +99,6 @@ font-family: 'Times New Roman', Times, serif;
     text-align:start;
     height:350px;
     justify-content: space-between;
-    position:fixed;
     bottom:0px;
 }
 
@@ -187,9 +206,7 @@ font-family: 'Times New Roman', Times, serif;
     padding-left: 20px;
 }
 
-.isi{
-    background-color: rgb(255, 225, 225);
-    height:500px;
+.konten{
     padding-left: 30px;
 }
 
@@ -201,5 +218,4 @@ font-family: 'Times New Roman', Times, serif;
 .nextberita{
     display: inline-block;
     width:25%;
-    float: right;
 }
