@@ -7,7 +7,7 @@
 /*navigation*/
 .navbar{
     width:100%; 
-    background-color:brown;
+    background-color:rgb(20, 20, 20);
 }
 .navbar-container{
     display:flex;
@@ -68,9 +68,10 @@
 }
 
 .JudulKategori{
-    background-color: brown;
-    height: 50px;
+    background-color: rgb(20, 20, 20);
+    height: 70px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .gambarcard{
@@ -94,7 +95,7 @@ font-family: 'Times New Roman', Times, serif;
 
 /*FOOTER*/
 .containerakhir{
-    background-color: brown;
+    background-color: rgb(20, 20, 20);
     width:100%;
     text-align:start;
     height:350px;
@@ -206,6 +207,8 @@ font-family: 'Times New Roman', Times, serif;
     padding-left: 20px;
 }
 
+
+/*Isi Berita*/
 .konten{
     padding-left: 30px;
 }
@@ -216,6 +219,6 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 .nextberita{
-    display: inline-block;
+    margin-top: 30px;
     width:25%;
 }
